@@ -16,7 +16,11 @@ from aiogram.types import (
     ReplyKeyboardRemove,
     Contact,
 )
+router = Router()
 
+@router.message()
+async def debug(message: Message):
+    print("CHAT ID:", message.chat.id)
 # ──────────────────────────────────────────────
 # Настройки
 # ──────────────────────────────────────────────
