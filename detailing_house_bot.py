@@ -16,9 +16,7 @@ from aiogram.types import (
     ReplyKeyboardRemove,
     Contact,
 )
-@router.message()
-async def log_chat_id(message: Message):
-    print("GROUP CHAT ID:", message.chat.id)
+
 # ──────────────────────────────────────────────
 # Настройки
 # ──────────────────────────────────────────────
